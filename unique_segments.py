@@ -38,11 +38,11 @@ def find_repeating_segments(segments):
                 json.dump( 'repeats: '+ ', '.join(repeats[i]), outfile)
             outfile.write('\n')
 
-find_repeating_segments(segments)
+# find_repeating_segments(segments)
 
 
 # how man unique animals are there?
-def unique_animals(list_of_dicts):
+def unique_animals(segments):
     all_animals = list()
 
     for i in range(len(segments)):
@@ -58,5 +58,5 @@ def unique_animals(list_of_dicts):
     return list(set(all_animals))
 
 
-# print(unique_animals(segments))
-# print(len(unique_animals(segments)))
+print(unique_animals(segments))
+print(len(unique_animals(segments)))
